@@ -1,0 +1,71 @@
+.gallery{
+    /* задний фон */
+    background-image: url(https://static.tildacdn.pro/tild6437-6536-4632-b333-303462363166/4854835.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 50px;
+    position: relative;
+    padding-top: 60px; /* Высота пространства сверху */
+    margin-top: -60px;}
+.photos{
+    /* чтобы все элементы выстраивались в сетку */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 105px;
+    width: 65%;
+    /* расстояние между ними */
+    gap: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+/* фотолар(элементтер) */
+.photos .item{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* первый элемент */
+.photos .item:first-child{
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    background-image: url(/Users/mukanmiras/Desktop/AlatauWeb/public/content/slider1.JPG);
+}
+.photos .item:nth-child(2){
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+    background-image: url(/Users/mukanmiras/Desktop/AlatauWeb/public/content/slider6.JPG);
+}
+.photos .item:nth-child(3){
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+    background-image: url(/Users/mukanmiras/Desktop/AlatauWeb/public/content/slider3.JPG);
+ }
+.photos .item:nth-child(4){
+    grid-column: 1 / 2;
+    grid-row: 3 / 6;
+    background-image: url(/Users/mukanmiras/Desktop/AlatauWeb/public/content/slider4.JPG);
+}
+.photos .item:nth-child(5){
+    grid-column: 2 / 3;
+    grid-row: 4 / 6;
+    background-image: url(/Users/mukanmiras/Desktop/AlatauWeb/public/content/slider5.JPG);
+}
+
+/* последний элемент */
+.photos .item:nth-child(6){
+    grid-column: 3 / 4;
+    grid-row: 3 / 6;
+    background-image: url(/Users/mukanmiras/Desktop/AlatauWeb/public/content/slider2.jpeg);
+}
+
+
+.ttl h2{
+    display: flex;
+    margin: 50px;
+    align-items: center;
+    justify-content: center;
+}
